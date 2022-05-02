@@ -100,4 +100,17 @@ $('.slider').each(function() {
   });
   
   advance();
+  
+});
+
+//Video-Display
+document.addEventListener("DOMContentLoaded", function(){
+  document.body.addEventListener("touchstart", playVideo);
+  function playVideo() {
+      const video = document.getElementById('openingVideo');
+      if(video.playing) {
+      } else {
+          video.play();
+      }
+  }
 });
