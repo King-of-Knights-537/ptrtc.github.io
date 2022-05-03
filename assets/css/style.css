@@ -241,6 +241,7 @@ header .navbar-toggler.open .navbar-toggler-icon::after{
 #opening article .contents{
     padding-left: 5.5em;
     padding-right: 2.5em;
+    padding-bottom: 2em;
 }
 #opening article .introduction{
     margin: 2.5em 0;
@@ -271,8 +272,7 @@ header .navbar-toggler.open .navbar-toggler-icon::after{
     justify-content: center;
 }
 #second .tvp-plan p{
-    margin-top: 1.25em;
-    margin-bottom: 0;
+    margin: 1.25em 0;
 }
 #second .tvp-plan p span{
     display: block;
@@ -381,15 +381,15 @@ header .navbar-toggler.open .navbar-toggler-icon::after{
 /* === RWD === */
 a.rwd-contact{
     position: fixed;
-    right: 0; top: 55%;
+    right: 0; top: 12%;
     background: #075E54;
     padding: 7px 14px; width: 170px;
-    font-size: 16px; color: #FFF;
+    font-size: 22px; color: #FFF;
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
     display: flex; justify-content: space-between;
     align-items: center;
-    z-index: 1030; transition: all .5s ease;
+    z-index: 1000; transition: all .5s ease;
 }
 a.rwd-contact:hover,
 a.rwd-contact:active{
@@ -404,7 +404,7 @@ a.rwd-contact span{
 @media only screen and (max-width: 600px) {
 
     #opening article {
-        top: 9.5em;
+        top: 12em;
     }
     #opening article .contents {
         padding-left: 1.5em;
@@ -414,13 +414,14 @@ a.rwd-contact span{
         height: inherit;
     }
     #second .tvp-plan article {
-        width: 85% !important; 
+        width: 90% !important;
         display: block;
         margin-left: auto;
         margin-right: auto;
-        left: 0; top: 0;
+        left: 0;
+        top: 0;
         background: none;
-        padding: 2em 2em;
+        padding: 2em 1em;
     }
     #second .tvp-plan .banner {
         display: none;
@@ -434,7 +435,7 @@ a.rwd-contact span{
         padding: 16px 16px;
     }
     #second .tvp-plan .chart img {
-        width: 95%;
+        width: 100%;
     }
     #forth .contents {
         padding-top: 3em;
@@ -447,7 +448,7 @@ a.rwd-contact span{
     }
     #forth .web-design .image-1 img,
     #fifth .apps-design .image-1 img{
-        width: 90%;
+        width: 100%;
     }
     #forth .web-design{
         margin-top: 3em;
@@ -549,7 +550,7 @@ a.rwd-contact span{
 
 @media only screen and (max-width: 990px){
 
-    header .navbar .navbar-collapse {
+    header .navbar .navbar-nav {
         margin-top: 15px;
     }
     header .navbar .nav-item {
@@ -590,7 +591,7 @@ a.rwd-contact span{
         font-size: 14px;
     }
     h1{
-        font-size: 18px !important;
+        font-size: 17.5px !important;
     }
     h2{
         font-size: 22px !important;
