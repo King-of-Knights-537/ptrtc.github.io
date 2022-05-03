@@ -80,6 +80,9 @@ video{
 .video-container video{
     width: inherit;
 }
+video#openingVideo{
+    z-index: -10;
+}
 
 /* === Fonts === */
 
@@ -423,7 +426,7 @@ header .navbar-toggler.open .navbar-toggler-icon::after{
         margin-right: 3em;
     }
     #opening video {
-        height: 650px;
+        height: 600px;
     }
     #second .tvp-plan {
         padding-top: 2em;
