@@ -108,7 +108,15 @@ header .navbar .container-fluid{
     padding: 1em 4em;
 }
 header .navbar img.logo{
-    width: 500px;
+    width: 80px;
+}
+header .navbar .logo-text{
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+}
+header .navbar .logo-text span{
+    display: block;
 }
 header .navbar .navbar-brand{
     /*Inside-Alignment*/
@@ -127,18 +135,14 @@ header .navbar .nav-item{
     align-items: center;
     margin: 1em 1em;
 }
-header .navbar .nav-item.contact{
-    padding: 8px 16px;
-    margin-left: auto; margin-right: auto;
-    border: 2px solid #FFF;
-}
-header .navbar .nav-item.contact a{
-    width: 180px; 
+header .navbar a.contact {
+    width: 200px; padding: 8px 16px;
+    border: 2px solid #FFF; font-size: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-header .navbar .nav-item a{
+header .navbar a{
     color: #FFF;
     font-size: 22px;
 }
@@ -236,12 +240,15 @@ header .navbar-toggler.open .navbar-toggler-icon::after{
     position: relative; text-align: center;
     left: 4em; top: 4em;
     background: rgba(33, 28, 24, .8);
-    padding: 0 3.5em; 
-    padding-top: 2.5em; padding-bottom: 3em;
+    padding: 2.5em 3.5em; 
+}
+#second .tvp-plan p{
+    margin-top: 1.25em;
+    margin-bottom: 0;
 }
 #second .tvp-plan .chart img{
     width: 525px;
-    margin-top: 1.5em;
+    margin: 17px 0;
 }
 #second .tvp-plan .banner{
     position: absolute;
@@ -273,10 +280,27 @@ header .navbar-toggler.open .navbar-toggler-icon::after{
     position: relative;
     width: inherit;
     display: inline-block;
-    margin-right: 3em;
 }
 #forth .web-design .image-1 img{
     width: 450px;
+}
+#forth article.web-design{
+    position: relative;
+    left: -10px;
+}
+#forth .web-design .icon-1{
+    position: relative;
+    width: inherit;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#forth .web-design .icon-1 img{
+    width: 280px;
+    animation: spin 10s linear infinite;
+}
+@keyframes spin {
+    100%{transform: rotate(360deg);}
 }
 #fifth article.apps-design{
     position: relative;
@@ -324,9 +348,7 @@ header .navbar-toggler.open .navbar-toggler-icon::after{
 }
 
 @media only screen and (max-width: 600px) {
-    header .navbar .container-fluid {
-        padding: 1em 2em;
-    }
+
     #opening article {
         top: 11em;
     }
@@ -349,10 +371,17 @@ header .navbar-toggler.open .navbar-toggler-icon::after{
     #second .tvp-plan .banner {
         display: none;
     }
+
 }
 
 @media only screen and (max-width: 780px){
 
+    header .navbar .container-fluid {
+        padding: 16px 16px;
+    }
+    header .navbar .logo-text{
+        display: none;
+    }
     #second .tvp-plan .chart img {
         width: 95%;
     }
@@ -372,6 +401,13 @@ header .navbar-toggler.open .navbar-toggler-icon::after{
     #forth .web-design{
         margin-top: 3em;
     }
+    #forth .web-design .icon-1 {
+        text-align: center;
+        margin-top: 2.5em;
+    }
+    #forth .web-design .icon-1 img {
+        width: 45%;
+    }
     #forth .web-design .web-design-projects .detail, 
     #fifth .apps-design .apps-design-projects .detail {
         position: relative;
@@ -389,6 +425,9 @@ header .navbar-toggler.open .navbar-toggler-icon::after{
 
 @media only screen and (min-width: 600px) and (max-width: 1200px) {
 
+    #opening article {
+        top: 14em;
+    }
     #second {
         height: 800px;
     }
@@ -412,6 +451,9 @@ header .navbar-toggler.open .navbar-toggler-icon::after{
 
 @media only screen and (min-width: 780px) and (max-width: 1040px) {
 
+    header .navbar .container-fluid {
+        padding: 1em 2em;
+    }
     #forth .web-design .image-1 img {
         width: 300px;
     }
@@ -426,16 +468,60 @@ header .navbar-toggler.open .navbar-toggler-icon::after{
 
 }
 
+@media only screen and (min-width: 780px) and (max-width: 1150px) {
+
+    #forth .web-design .icon-1 {
+        display: none;
+    }
+    #forth .web-design .web-design-projects .detail, 
+    #fifth .apps-design .apps-design-projects .detail {
+        padding: 2em 2em;
+        margin: 1.5em 1em;
+        max-width: 310px;
+    }
+
+}
+
+@media only screen and (min-width: 780px) and (max-width: 1550px) {
+
+    #forth .web-design .icon-1 {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 990px){
+
+    header .navbar .navbar-collapse {
+        margin-top: 15px;
+    }
+    header .navbar .nav-item {
+        margin: 5px 1em;
+    }
+
+}
+
+@media only screen and (min-width: 990px){
+
+    header .navbar a.contact {
+        order: 2;
+    }
+
+}
+
 @media only screen and (max-width: 1200px) {
+
     header .navbar {
         padding-top: 0;
         padding-bottom: 0;
     }
     header .navbar img.logo {
-        width: 225px;
+        width: 50px;
     }
-    header .navbar .navbar-collapse {
-        margin-top: 1em;
+    header .navbar a.contact {
+        width: 180px;
+        padding: 5px 12px;
+        font-size: 18px;
     }
     h1, h2{
         font-size: 25px !important;
