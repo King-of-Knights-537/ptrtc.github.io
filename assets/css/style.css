@@ -354,7 +354,7 @@ header .navbar-toggler.open .navbar-toggler-icon::after{
     }
     #opening article .contents {
         padding-left: 2.5em;
-        padding-right: 1.5em;
+        padding-right: 0;
     }
     #second {
         height: inherit;
@@ -523,11 +523,14 @@ header .navbar-toggler.open .navbar-toggler-icon::after{
         padding: 5px 12px;
         font-size: 18px;
     }
-    h1, h2{
-        font-size: 25px !important;
+    h1{
+        font-size: 17px !important;
+    }
+    h2{
+        font-size: 20px !important;
     }
     p {
-        font-size: 18px;
+        font-size: 15px;
     }
     #opening article .introduction span {
         display: inline;
@@ -557,7 +560,7 @@ header .navbar-toggler.open .navbar-toggler-icon::after{
     }
     #forth .web-design .web-design-projects .detail h3, 
     #fifth .apps-design .apps-design-projects .detail h3 {
-        font-size: 22.5px;
+        font-size: 20px;
         margin: .75em 0;
     }
 }
