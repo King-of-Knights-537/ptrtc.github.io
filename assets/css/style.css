@@ -420,6 +420,12 @@ header .navbar-toggler.open .navbar-toggler-icon::after{
     #fifth .apps-design{
         margin-top: .75em;
     }
+    #fifth .apps-design .image-1{
+        order: 1;
+    }
+    #fifth .apps-design .col-md-5{
+        order: 2;
+    }
 
 }
 
