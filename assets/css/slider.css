@@ -96,7 +96,7 @@ a.slide_btn {
 
 @media only screen and (max-width: 1200px){
   .slide h2 {
-    font-size: 35px !important;
+    font-size: 30px !important;
     width: 100%; text-align: center;
   }
 }
@@ -129,9 +129,9 @@ a.slide_btn {
 
 @media only screen and (max-width: 767px) {
   .previous_btn {
-    left: 35px;
+    left: 28px;
   }
   .next_btn {
-    right: 35px;
+    right: 28px;
   }
 }
