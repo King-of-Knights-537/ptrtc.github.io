@@ -255,7 +255,7 @@ header .navbar-toggler.open .navbar-toggler-icon::after{
 
 /* === Second === */
 #second{
-    height: 950px;
+    height: 1050px;
 }
 #second .tvp-plan{
     padding-top: 5em;
@@ -263,9 +263,11 @@ header .navbar-toggler.open .navbar-toggler-icon::after{
 #second .tvp-plan article{
     width: 680px; line-height: 1.55;
     position: relative; text-align: center;
-    left: 4em; top: 4em;
+    left: 4em; padding: 2.5em 3.5em; 
     background: rgba(33, 28, 24, .8);
-    padding: 2.5em 3.5em; 
+}
+#second .tvp-plan article h2{
+    margin-bottom: 0.15em !important;
 }
 #second .tvp-plan article .contents{
     display: flex;
@@ -283,7 +285,7 @@ header .navbar-toggler.open .navbar-toggler-icon::after{
 }
 #second .tvp-plan .banner{
     position: absolute;
-    right: 4.25em; top: 5em;
+    right: 4.25em; top: 9.5em;
 }
 #second .tvp-plan .banner img{
     width: 1400px;
@@ -381,7 +383,7 @@ header .navbar-toggler.open .navbar-toggler-icon::after{
 /* === RWD === */
 a.rwd-contact{
     position: fixed;
-    right: 0; top: 12%;
+    right: 0; top: 14%;
     background: #075E54;
     padding: 7px 14px; width: 170px;
     font-size: 22px; color: #FFF;
@@ -409,6 +411,7 @@ a.rwd-contact span{
     #opening article .contents {
         padding-left: 1.5em;
         padding-right: 0;
+        padding-bottom: 1.3em;
     }
     #second {
         height: inherit;
@@ -474,6 +477,7 @@ a.rwd-contact span{
     }
     #fifth .apps-design .image-1{
         order: 1;
+        margin-bottom: 1.25em;
     }
     #fifth .apps-design .col-md-5{
         order: 2;
@@ -591,7 +595,7 @@ a.rwd-contact span{
         font-size: 14px;
     }
     h1{
-        font-size: 17.5px !important;
+        font-size: 18px !important;
     }
     h2{
         font-size: 22px !important;
