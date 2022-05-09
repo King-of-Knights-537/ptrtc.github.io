@@ -383,7 +383,7 @@ header .navbar-toggler.open .navbar-toggler-icon::after{
 /* === RWD === */
 a.rwd-contact{
     position: fixed;
-    right: 0; top: 14%;
+    right: 0; top: 15.5%;
     background: #075E54;
     padding: 7px 14px; width: 170px;
     font-size: 22px; color: #FFF;
@@ -474,6 +474,9 @@ a.rwd-contact span{
     }
     #fifth .apps-design{
         margin-top: .75em;
+    }
+    #fifth .contents {
+        padding-top: 1.5em;
     }
     #fifth .apps-design .image-1{
         order: 1;
