@@ -384,7 +384,7 @@ header .navbar-toggler.open .navbar-toggler-icon::after{
 /* === RWD === */
 a.rwd-contact{
     position: fixed;
-    right: 0; top: 12em;
+    right: 0; top: 13em;
     background: #075E54;
     padding: 7px 14px; width: 170px;
     font-size: 22px; color: #FFF;
